@@ -51,7 +51,7 @@ pipeline {
     }
     
     stages {
-        stage('GIT CHECKOUT') {
+        stage('GIT NEW CHECKOUT') {
             steps {
                git branch: 'main', credentialsId: 'git-cred', url: 'https://github.com/VM2322/Boardgame.git'
             }
